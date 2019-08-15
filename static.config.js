@@ -23,6 +23,7 @@ export default {
         location: path.resolve('./src/pages')
       }
     ],
+    'react-static-plugin-styled-components',
     require.resolve('react-static-plugin-reach-router'),
     require.resolve('react-static-plugin-sitemap')
   ]
