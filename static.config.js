@@ -7,6 +7,7 @@ export default {
   Document: ({ Html, Head, Body, children }) => (
     <Html lang="ja">
       <Head>
+        <title>neriko.net</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Rajdhani&display=swap" rel="stylesheet" />
