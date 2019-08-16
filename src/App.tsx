@@ -16,7 +16,12 @@ function App() {
         </React.Suspense>
       </Main>
       <Footer>
-        <Link to="/">neriko.net</Link>
+        <FooterLinkWrapper>
+          <Link to="/">neriko.net</Link>
+        </FooterLinkWrapper>
+        <FooterLinkWrapper>
+          <a href="https://github.com/nerikeshi-k/portfolio">source</a>
+        </FooterLinkWrapper>
       </Footer>
     </Root>
   );
@@ -34,6 +39,13 @@ const Footer = styled.footer`
   border-top: 1px dotted #aaa;
   text-align: center;
   max-width: 600px;
+`;
+
+const FooterLinkWrapper = styled.div`
+  display: inline-block;
+  &:not(:last-of-type) {
+    margin-right: 20px;
+  }
 `;
 
 export default App;
