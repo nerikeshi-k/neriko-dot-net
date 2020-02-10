@@ -13,10 +13,13 @@ export default () => (
       <MyIconWrapper>
         <MyIcon src="/icon.jpg" />
       </MyIconWrapper>
-      <Name>ねりけし</Name>
-      <Description>
-        <Paragraph>銀座周辺にあった会社のフロントエンドエンジニアです。</Paragraph>
-        <Paragraph>漫画を描いたり、音楽を作ったり、Webサービスを作ったりするのが趣味です。</Paragraph>
+      <Description centering>
+        <Paragraph>ねりけしです。Webのエンジニアです。</Paragraph>
+        <Paragraph>
+          <a href="https://twitter.com/i/events/1226912137999613962">漫画を描い</a>たり、
+          <a href="https://twitter.com/i/events/1226735657483038720">音楽を作っ</a>
+          たり、Webサービスを作ったりしています。
+        </Paragraph>
       </Description>
     </Profile>
     <Works>
@@ -42,8 +45,8 @@ export default () => (
         </WorkLinkItem>
       </WorkLinkList>
     </Works>
-    <Contacts>
-      <SectionHeading>contact</SectionHeading>
+    <Links>
+      <SectionHeading>links</SectionHeading>
       <ExLinkList>
         <ExLinkItem>
           <a href="https://twitter.com/nerikeshi_k">twitter</a>
@@ -51,6 +54,14 @@ export default () => (
         <ExLinkItem>
           <a href="https://github.com/nerikeshi-k">github</a>
         </ExLinkItem>
+        <ExLinkItem>
+          <a href="https://www.pixiv.net/fanbox/creator/10618193">pixiv fanbox</a>
+        </ExLinkItem>
+      </ExLinkList>
+    </Links>
+    <Contacts>
+      <SectionHeading>contact</SectionHeading>
+      <ExLinkList>
         <ExLinkItem>nerikeshik@gmail.com</ExLinkItem>
       </ExLinkList>
     </Contacts>
@@ -77,12 +88,6 @@ const MyIcon = styled.img`
   max-height: 100%;
 `;
 
-const Name = styled.div`
-  margin: auto;
-  text-align: center;
-  margin-bottom: 8px;
-`;
-
 const Works = styled(Section)``;
 
 const WorkLinkList = styled.ul`
@@ -104,9 +109,11 @@ const Icon = styled.img`
 `;
 
 const WorkLinkLabel = styled.div`
-  color: #333;
+  color: #fff;
   font-size: 0.9rem;
 `;
+
+const Links = styled(Section)``;
 
 const Contacts = styled(Section)``;
 

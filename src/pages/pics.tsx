@@ -6,7 +6,8 @@ export default () => (
   <Wrapper>
     <Heading>pics</Heading>
     <LinkWrapper>
-      <a href="https://twitter.com/nerikeshi_k">twitter</a>
+      <a href="https://twitter.com/nerikeshi_k">twitter</a>か<a href="https://www.pixiv.net/users/10618193">pixiv</a>
+      をご覧ください
     </LinkWrapper>
   </Wrapper>
 );

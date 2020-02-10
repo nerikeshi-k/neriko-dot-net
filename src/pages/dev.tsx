@@ -16,7 +16,6 @@ export default () => (
           <a href="https://odaibako.net">odaibako.net</a>
         </Paragraph>
         <Paragraph>匿名リクエストボックス開設サービスです。</Paragraph>
-        <Paragraph>現在90万人超のユーザーに使っていただいております。</Paragraph>
       </Description>
     </Section>
     <Section>
@@ -30,17 +29,6 @@ export default () => (
       </Description>
     </Section>
     <Section>
-      <ServiceName>chaii</ServiceName>
-      <ScreenShot src="/chaii.png" />
-      <Description>
-        <Paragraph>
-          <a href="https://chaii.app">chaii.app</a>
-        </Paragraph>
-        <Paragraph>時限付きのボイスチャットルームを簡単に作れるサービスです。</Paragraph>
-        <Paragraph>ユーザー登録の必要がなく、ブラウザだけで動作するため、誰でもすぐに使えます。まだβ版です。</Paragraph>
-      </Description>
-    </Section>
-    <Section>
       <ServiceName>LGTMi</ServiceName>
       <ScreenShot src="/lgtmi.png" />
       <Description>
@@ -48,6 +36,17 @@ export default () => (
           <a href="https://lgtmi.neriko.net">lgtmi.neriko.net</a>
         </Paragraph>
         <Paragraph>LGTM画像を生成するジェネレータです。Twitterなどの画像URLを貼り付けるだけで生成できます。</Paragraph>
+      </Description>
+    </Section>
+    <Section>
+      <ServiceName>chaii</ServiceName>
+      <ScreenShot src="/chaii.png" />
+      <Description>
+        <Paragraph>
+          <a href="https://chaii.app">【閉鎖】chaii.app</a>
+        </Paragraph>
+        <Paragraph>時限付きのボイスチャットルームを簡単に作れるサービスです。</Paragraph>
+        <Paragraph>ユーザー登録の必要がなく、ブラウザだけで動作するため、誰でもすぐに使えます。まだβ版です。</Paragraph>
       </Description>
     </Section>
   </Wrapper>
@@ -61,27 +60,6 @@ const Wrapper = styled.div`
 const ServiceName = styled(SectionHeading)`
   font-family: 'Noto Sans JP', -apple-system, meiryo, sans-serif;
   letter-spacing: unset;
-  font-size: 1.2rem;
-
-  &::before {
-    display: inline-block;
-    content: '';
-    width: 8px;
-    height: 8px;
-    background-color: #333;
-    vertical-align: middle;
-    margin-right: 8px;
-  }
-
-  &::after {
-    display: inline-block;
-    content: '';
-    width: 8px;
-    height: 8px;
-    background-color: #333;
-    vertical-align: middle;
-    margin-left: 8px;
-  }
 `;
 
 const ScreenShot = styled.img`
