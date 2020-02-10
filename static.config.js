@@ -15,7 +15,7 @@ export default {
         <meta property="og:url" content="https://neriko.net/" />
         <meta property="og:title" content="neriko.net" />
         <meta property="og:description" content="ねりけしについて" />
-        <meta property="og:image" content="/icon.jpg" />
+        <meta property="og:image" content="https://neriko.net/icon.jpg" />
       </Head>
       <Body>{children}</Body>
     </Html>
