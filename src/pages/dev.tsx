@@ -19,11 +19,11 @@ export default () => (
       </Description>
     </Section>
     <Section>
-      <ServiceName>モザイクツイーター</ServiceName>
-      <ScreenShot src="/mosaic.png" />
+      <ServiceName>bokasitter</ServiceName>
+      <ScreenShot src="/bokasitter.png" />
       <Description>
         <Paragraph>
-          <a href="https://mosaic.neriko.net">mosaic.neriko.net</a>
+          <a href="https://bokasitter.net">bokasitter.net</a>
         </Paragraph>
         <Paragraph>Twitterにモザイクやぼかしつきで画像を投稿できるサービスです。</Paragraph>
       </Description>
