@@ -13,8 +13,8 @@ export default {
         <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet" />
         <meta name="twitter:card" content="summary" />
         <meta property="og:url" content="https://neriko.net/" />
-        <meta property="og:title" content="neriko.net" />
-        <meta property="og:description" content="ねりけしについて" />
+        <meta property="og:title" content="ねりけしについて" />
+        <meta property="og:description" content="こちらをご覧ください" />
         <meta property="og:image" content="https://neriko.net/icon.jpg" />
       </Head>
       <Body>{children}</Body>
