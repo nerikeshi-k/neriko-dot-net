@@ -14,7 +14,7 @@ export default {
         <meta name="twitter:card" content="summary" />
         <meta property="og:url" content="https://neriko.net/" />
         <meta property="og:title" content="ねりけしについて" />
-        <meta property="og:description" content="こちらをご覧ください" />
+        <meta property="og:description" content="制作物一覧、自己紹介、連絡先などです" />
         <meta property="og:image" content="https://neriko.net/ogp.20200813.jpg" />
       </Head>
       <Body>{children}</Body>
