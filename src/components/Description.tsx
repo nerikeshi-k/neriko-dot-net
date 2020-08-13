@@ -9,7 +9,7 @@ const Description = styled.div<{ centering?: boolean }>`
 export const Paragraph = styled.p`
   margin: 0;
   &:not(:last-of-type) {
-    margin-bottom: 4px;
+    margin-bottom: 20px;
   }
 `;
 

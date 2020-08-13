@@ -13,27 +13,26 @@ export default () => (
         <MyIcon src="/icon.20200813.jpg" />
       </MyIconWrapper>
       <Description>
-        <Paragraph>ねりけしといいます。</Paragraph>
+        <Paragraph>こんにちは。ねりけしといいます。</Paragraph>
         <Paragraph>
-          Webのプログラマです。TypeScriptとReactが好きです。
+          <a href="https://odaibako.net">お題箱</a>、<a href="https://bokasitter.net">ぼかしったー</a>
+          といったWebサービスを個人で開発運営しています。
           <br />
-          <a href="https://odaibako.net">お題箱</a>や<a href="https://bokasitter.net">ぼかしったー</a>
-          などのWebサービスを開発運営しています。
-          <br />
-          絵や漫画などを描きます。
-          <br />
-          作曲します。
+          TypeScriptとReactが好きです。Pythonも好きです。
+        </Paragraph>
+        <Paragraph>
+          絵や漫画を描くのも好きで、コミティアに「けしのみ」というサークルでよく出ています。作曲もたまにします。
         </Paragraph>
       </Description>
     </Section>
     <Section>
-      <SectionHeading>リンク</SectionHeading>
+      <SectionHeading>リンク、制作物</SectionHeading>
       <ExLinkList>
         <ExLinkItem>
           <a href="https://twitter.com/nerikeshi_k">Twitter</a>
         </ExLinkItem>
         <ExLinkItem>
-          <a href="https://twitter.com/i/events/1226912137999613962">Twitterの漫画</a>
+          <a href="https://twitter.com/i/events/1226912137999613962">Twitterのマンガ</a>
         </ExLinkItem>
         <ExLinkItem>
           <a href="https://twitter.com/i/events/1226735657483038720">Twitterの音楽</a>
@@ -59,7 +58,7 @@ export default () => (
       <SectionHeading>れんらくさき</SectionHeading>
       <ExLinkList>
         <ExLinkItem>
-          お仕事やご相談は下記アドレスにお願いします。
+          お仕事やご相談は下記アドレスにお願いします。
           <br />
           nerikeshik@gmail.com
         </ExLinkItem>
