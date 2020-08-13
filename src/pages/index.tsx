@@ -1,70 +1,70 @@
+import Description, { Paragraph } from 'components/Description';
+import Heading from 'components/Heading';
+import Section from 'components/Section';
+import SectionHeading from 'components/SectionHeading';
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from '@reach/router';
-import Heading from 'components/Heading';
-import SectionHeading from 'components/SectionHeading';
-import Section from 'components/Section';
-import Description, { Paragraph } from 'components/Description';
 
 export default () => (
   <Wrapper>
     <Heading>neriko.net</Heading>
-    <Profile>
+    <Section>
       <MyIconWrapper>
         <MyIcon src="/icon.jpg" />
       </MyIconWrapper>
-      <Description centering>
-        <Paragraph>ねりけしです。Webのエンジニアです。</Paragraph>
+      <Description>
+        <Paragraph>ねりけしといいます。</Paragraph>
         <Paragraph>
-          <a href="https://twitter.com/i/events/1226912137999613962">漫画を描い</a>たり、
-          <a href="https://twitter.com/i/events/1226735657483038720">音楽を作っ</a>
-          たり、Webサービスを作ったりしています。
+          Webのプログラマです。TypeScriptとReactが好きです。
+          <br />
+          <a href="https://odaibako.net">お題箱</a>や<a href="https://bokasitter.net">ぼかしったー</a>
+          などのWebサービスを開発運営しています。
+          <br />
+          絵や漫画などを描きます。
+          <br />
+          作曲します。
         </Paragraph>
       </Description>
-    </Profile>
-    <Works>
-      <SectionHeading>works</SectionHeading>
-      <WorkLinkList>
-        <WorkLinkItem>
-          <Link to="/dev">
-            <Icon src="/icon-code.svg" />
-            <WorkLinkLabel>開発</WorkLinkLabel>
-          </Link>
-        </WorkLinkItem>
-        <WorkLinkItem>
-          <Link to="/pics">
-            <Icon src="/icon-color_lens.svg" />
-            <WorkLinkLabel>絵</WorkLinkLabel>
-          </Link>
-        </WorkLinkItem>
-        <WorkLinkItem>
-          <Link to="/musics">
-            <Icon src="/icon-music_note.svg" />
-            <WorkLinkLabel>音</WorkLinkLabel>
-          </Link>
-        </WorkLinkItem>
-      </WorkLinkList>
-    </Works>
-    <Links>
-      <SectionHeading>links</SectionHeading>
+    </Section>
+    <Section>
+      <SectionHeading>リンク</SectionHeading>
       <ExLinkList>
         <ExLinkItem>
-          <a href="https://twitter.com/nerikeshi_k">twitter</a>
+          <a href="https://twitter.com/nerikeshi_k">Twitter</a>
         </ExLinkItem>
         <ExLinkItem>
-          <a href="https://github.com/nerikeshi-k">github</a>
+          <a href="https://twitter.com/i/events/1226912137999613962">Twitterの漫画</a>
         </ExLinkItem>
         <ExLinkItem>
-          <a href="https://www.pixiv.net/fanbox/creator/10618193">pixiv fanbox</a>
+          <a href="https://twitter.com/i/events/1226735657483038720">Twitterの音楽</a>
+        </ExLinkItem>
+        <ExLinkItem>
+          <a href="https://www.pixiv.net/users/10618193">pixiv</a>
+        </ExLinkItem>
+        <ExLinkItem>
+          <a href="https://github.com/nerikeshi-k">GitHub</a>
+        </ExLinkItem>
+        <ExLinkItem>
+          <a href="https://soundcloud.com/nerikeshik">soundcloud</a>
+        </ExLinkItem>
+        <ExLinkItem>
+          <a href="https://www.nicovideo.jp/user/1860167">ニコニコ動画</a>
+        </ExLinkItem>
+        <ExLinkItem>
+          <a href="https://www.pixiv.net/fanbox/creator/10618193">pixiv FANBOX（活動支援）</a>
         </ExLinkItem>
       </ExLinkList>
-    </Links>
-    <Contacts>
-      <SectionHeading>contact</SectionHeading>
+    </Section>
+    <Section>
+      <SectionHeading>れんらくさき</SectionHeading>
       <ExLinkList>
-        <ExLinkItem>nerikeshik@gmail.com</ExLinkItem>
+        <ExLinkItem>
+          お仕事やご相談は下記アドレスにお願いします。
+          <br />
+          nerikeshik@gmail.com
+        </ExLinkItem>
       </ExLinkList>
-    </Contacts>
+    </Section>
   </Wrapper>
 );
 
@@ -73,10 +73,7 @@ const Wrapper = styled.div`
   margin: auto;
 `;
 
-const Profile = styled(Section)``;
-
 const MyIconWrapper = styled.div`
-  margin: auto;
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -88,43 +85,13 @@ const MyIcon = styled.img`
   max-height: 100%;
 `;
 
-const Works = styled(Section)``;
-
-const WorkLinkList = styled.ul`
-  list-style: none;
-  margin: 20px auto;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-`;
-
-const WorkLinkItem = styled.li`
-  text-align: center;
-  margin-bottom: 20px;
-`;
-
-const Icon = styled.img`
-  width: 40px;
-  height: 40px;
-`;
-
-const WorkLinkLabel = styled.div`
-  color: #fff;
-  font-size: 0.9rem;
-`;
-
-const Links = styled(Section)``;
-
-const Contacts = styled(Section)``;
-
 const ExLinkList = styled.ul`
   margin: 20px auto;
-  padding: 0;
-  list-style: none;
+  padding: 0 0 0 28px;
+  list-style: normal;
 `;
 
 const ExLinkItem = styled.li`
-  text-align: center;
   &:not(:last-of-type) {
     margin-bottom: 12px;
   }

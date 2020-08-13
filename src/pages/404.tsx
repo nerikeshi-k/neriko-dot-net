@@ -9,6 +9,4 @@ export default () => (
 
 const Wrapper = styled.div``;
 
-const Message = styled.div`
-  text-align: center;
-`;
+const Message = styled.div``;
