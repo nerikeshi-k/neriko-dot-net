@@ -1,7 +1,9 @@
 import { Router } from '@reach/router';
+import { Footer } from 'components/Footer';
 import Loading from 'components/Loading';
 import React from 'react';
 import { Root, Routes } from 'react-static';
+import 'sanitize.css';
 import styled from 'styled-components';
 import './app.css';
 
@@ -15,11 +17,7 @@ function App() {
           </Router>
         </React.Suspense>
       </Main>
-      <Footer>
-        <FooterLinkWrapper>
-          <a href="https://github.com/nerikeshi-k/portfolio">ソース</a>
-        </FooterLinkWrapper>
-      </Footer>
+      <Footer />
     </Root>
   );
 }
@@ -27,21 +25,7 @@ function App() {
 const Main = styled.main`
   margin: auto;
   background-color: transparent;
-  padding: 12px;
-`;
-
-const Footer = styled.footer`
-  margin: 20px auto 20px;
-  padding: 12px;
-  border-top: 1px dotted #aaa;
-  max-width: 600px;
-`;
-
-const FooterLinkWrapper = styled.div`
-  display: inline-block;
-  &:not(:last-of-type) {
-    margin-right: 20px;
-  }
+  padding: 0 12px;
 `;
 
 export default App;

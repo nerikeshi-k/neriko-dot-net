@@ -1,26 +1,21 @@
 html,
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Segoe UI, Hiragino Kaku Gothic ProN, Hiragino Sans,
-    ヒラギノ角ゴ ProN W3, Arial, メイリオ, Meiryo, sans-serif;
-  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Segoe UI,
+    Hiragino Kaku Gothic ProN, Hiragino Sans, ヒラギノ角ゴ ProN W3, Arial,
+    メイリオ, Meiryo, sans-serif;
+  font-size: 15px;
   margin: 0;
   padding: 0;
-  color: #fff;
-  /* Thanks to https://uigradients.com/#Ash */
-  background: #606c88; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #3f4c6b, #606c88); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #3f4c6b,
-    #606c88
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-body {
-  overscroll-behavior-y: none;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.5;
 }
 
 a {
   text-decoration: none;
-  color: #edff9f;
+  color: #3d96e9;
+}
+
+a:hover {
+  text-decoration: underline;
 }

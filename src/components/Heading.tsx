@@ -1,18 +1,19 @@
 import styled from 'styled-components';
 
 const Heading = styled.h1`
+  display: flex;
+  align-items: center;
   font-family: Rajdhani;
   font-weight: normal;
   margin: 24px 0;
-  font-size: 20px;
+  font-size: 30px;
 
   &::before {
-    display: inline-block;
+    display: block;
     content: '';
-    width: 8px;
-    height: 8px;
-    background-color: #fff;
-    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+    background-color: #333;
     margin-right: 8px;
   }
 `;

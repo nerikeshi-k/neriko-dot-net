@@ -1,5 +1,6 @@
 import Description, { Paragraph } from 'components/Description';
 import Heading from 'components/Heading';
+import { Link } from 'components/Link';
 import Section from 'components/Section';
 import SectionHeading from 'components/SectionHeading';
 import React from 'react';
@@ -10,59 +11,90 @@ export default () => (
     <Heading>neriko.net</Heading>
     <Section>
       <MyIconWrapper>
-        <MyIcon src="/icon.20200813.jpg" />
+        <MyIcon src="/icon.202109.png" alt="著者近影" />
       </MyIconWrapper>
       <Description>
-        <Paragraph>こんにちは。ねりけしといいます。</Paragraph>
+        <Paragraph>ねりけしです。</Paragraph>
         <Paragraph>
-          <a href="https://odaibako.net">お題箱</a>、<a href="https://bokasitter.net">ぼかしったー</a>
-          といったWebサービスを個人で開発運営しています。
-          <br />
-          TypeScriptとReactが好きです。Pythonも好きです。
-        </Paragraph>
-        <Paragraph>
-          絵や漫画を描くのも好きで、コミティアに「けしのみ」というサークルでよく出ています。作曲もたまにします。
+          絵や漫画を描くのが好きです。お題箱やぼかしったーなどを開発しています。本業はWebフロントエンドエンジニアで、TypeScriptを少し読むことができます。
         </Paragraph>
       </Description>
     </Section>
     <Section>
-      <SectionHeading>リンク、制作物</SectionHeading>
-      <ExLinkList>
-        <ExLinkItem>
-          <a href="https://twitter.com/nerikeshi_k">Twitter</a>
-        </ExLinkItem>
-        <ExLinkItem>
-          <a href="https://twitter.com/i/events/1226912137999613962">Twitterのマンガ</a>
-        </ExLinkItem>
-        <ExLinkItem>
-          <a href="https://twitter.com/i/events/1226735657483038720">Twitterの音楽</a>
-        </ExLinkItem>
-        <ExLinkItem>
-          <a href="https://www.pixiv.net/users/10618193">pixiv</a>
-        </ExLinkItem>
-        <ExLinkItem>
-          <a href="https://github.com/nerikeshi-k">GitHub</a>
-        </ExLinkItem>
-        <ExLinkItem>
-          <a href="https://soundcloud.com/nerikeshik">soundcloud</a>
-        </ExLinkItem>
-        <ExLinkItem>
-          <a href="https://www.nicovideo.jp/user/1860167">ニコニコ動画</a>
-        </ExLinkItem>
-        <ExLinkItem>
-          <a href="https://www.pixiv.net/fanbox/creator/10618193">pixiv FANBOX（活動支援）</a>
-        </ExLinkItem>
-      </ExLinkList>
+      <SectionHeading>リンク</SectionHeading>
+      <List>
+        <ListItem>
+          <Link href="https://twitter.com/nerikeshi_k" newtab>
+            Twitter
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://www.pixiv.net/users/10618193" newtab>
+            pixiv
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://www.pixiv.net/fanbox/creator/10618193" newtab>
+            pixiv FANBOX
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://www.pixiv.net/users/10618193/request" newtab>
+            pixiv リクエスト
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://github.com/nerikeshi-k" newtab>
+            GitHub
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://soundcloud.com/nerikeshik" newtab>
+            SoundCloud
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://www.nicovideo.jp/user/1860167" newtab>
+            ニコニコ動画
+          </Link>
+        </ListItem>
+      </List>
     </Section>
     <Section>
-      <SectionHeading>れんらくさき</SectionHeading>
-      <ExLinkList>
-        <ExLinkItem>
-          お仕事やご相談は下記アドレスにお願いします。
-          <br />
-          nerikeshik@gmail.com
-        </ExLinkItem>
-      </ExLinkList>
+      <SectionHeading>開発物</SectionHeading>
+      <List>
+        <ListItem>
+          <Link href="https://odaibako.net" newtab>
+            お題箱
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://odaibako.net/gacha" newtab>
+            お題ガチャ
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://bokasitter.net/" newtab>
+            ぼかしったー
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://monto.me/" newtab>
+            monto
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://lgtmi.neriko.net/" newtab>
+            LGTMi
+          </Link>
+        </ListItem>
+      </List>
+    </Section>
+    <Section>
+      <SectionHeading>連絡先</SectionHeading>
+      <List>
+        <ListItem colspan={2}>nerikeshik@gmail.com</ListItem>
+      </List>
     </Section>
   </Wrapper>
 );
@@ -73,9 +105,10 @@ const Wrapper = styled.div`
 `;
 
 const MyIconWrapper = styled.div`
-  width: 64px;
-  height: 64px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  border: 2px solid #efefef;
   overflow: hidden;
 `;
 
@@ -84,14 +117,32 @@ const MyIcon = styled.img`
   max-height: 100%;
 `;
 
-const ExLinkList = styled.ul`
+const List = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
   margin: 20px auto;
-  padding: 0 0 0 28px;
-  list-style: normal;
+  padding: 0 0 0 18px;
+  list-style: none;
+
+  @media (min-width: 680px) {
+    padding: 0 0 0 28px;
+  }
 `;
 
-const ExLinkItem = styled.li`
-  &:not(:last-of-type) {
-    margin-bottom: 12px;
+const ListItem = styled.li<{ colspan?: 1 | 2 }>`
+  width: ${({ colspan }) => (colspan === 2 ? '100%' : '50%')};
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+
+  &::before {
+    content: '';
+    display: block;
+    background-color: #ccc;
+    margin-right: 8px;
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
   }
 `;

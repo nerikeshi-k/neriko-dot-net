@@ -10,12 +10,18 @@ export default {
         <title>neriko.net</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap&text=neriko.net" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap&text=neriko.net"
+          rel="stylesheet"
+        />
         <meta name="twitter:card" content="summary" />
         <meta property="og:url" content="https://neriko.net/" />
         <meta property="og:title" content="ねりけしについて" />
-        <meta property="og:description" content="制作物一覧、自己紹介、連絡先などです" />
-        <meta property="og:image" content="https://neriko.net/ogp.20200813.jpg" />
+        <meta
+          property="og:description"
+          content="制作物一覧、自己紹介、連絡先などです"
+        />
+        <meta property="og:image" content="https://neriko.net/ogp.202109.png" />
       </Head>
       <Body>{children}</Body>
     </Html>
