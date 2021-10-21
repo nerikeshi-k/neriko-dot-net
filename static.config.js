@@ -29,7 +29,6 @@ export default {
       <Body>{children}</Body>
     </Html>
   ),
-  siteRoot: 'https://neriko.net/',
   plugins: [
     'react-static-plugin-typescript',
     [
