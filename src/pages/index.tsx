@@ -11,7 +11,7 @@ export default () => (
     <Heading>neriko.net</Heading>
     <Section>
       <MyIconWrapper>
-        <MyIcon src="/icon.202109.png" alt="著者近影" />
+        <MyIcon src="/icon.202110.png" alt="著者近影" />
       </MyIconWrapper>
       <Description>
         <Paragraph>ねりけしです。</Paragraph>

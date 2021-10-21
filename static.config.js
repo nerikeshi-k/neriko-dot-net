@@ -21,7 +21,10 @@ export default {
           property="og:description"
           content="制作物一覧、自己紹介、連絡先などです"
         />
-        <meta property="og:image" content="https://neriko.net/ogp.202109.png" />
+        <meta
+          property="og:image"
+          content="https://neriko.net/icon.202110.png"
+        />
       </Head>
       <Body>{children}</Body>
     </Html>
@@ -32,11 +35,11 @@ export default {
     [
       require.resolve('react-static-plugin-source-filesystem'),
       {
-        location: path.resolve('./src/pages')
-      }
+        location: path.resolve('./src/pages'),
+      },
     ],
     'react-static-plugin-styled-components',
     require.resolve('react-static-plugin-reach-router'),
-    require.resolve('react-static-plugin-sitemap')
-  ]
+    require.resolve('react-static-plugin-sitemap'),
+  ],
 };
