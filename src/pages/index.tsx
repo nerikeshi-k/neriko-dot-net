@@ -11,7 +11,7 @@ export default () => (
     <Heading>neriko.net</Heading>
     <Section>
       <MyIconWrapper>
-        <MyIcon src="/icon.202110.png" alt="著者近影" />
+        <MyIcon src="/icon.202112.jpg" alt="著者近影" />
       </MyIconWrapper>
       <Description>
         <Paragraph>ねりけしです。</Paragraph>
@@ -21,11 +21,11 @@ export default () => (
       </Description>
     </Section>
     <Section>
-      <SectionHeading>リンク</SectionHeading>
+      <SectionHeading>links</SectionHeading>
       <List>
         <ListItem>
           <Link href="https://twitter.com/nerikeshi_k" newtab>
-            Twitter
+            twitter
           </Link>
         </ListItem>
         <ListItem>
@@ -35,33 +35,33 @@ export default () => (
         </ListItem>
         <ListItem>
           <Link href="https://www.pixiv.net/fanbox/creator/10618193" newtab>
-            pixiv FANBOX
+            pixiv fanbox
           </Link>
         </ListItem>
         <ListItem>
           <Link href="https://www.pixiv.net/users/10618193/request" newtab>
-            pixiv リクエスト
+            pixiv request
           </Link>
         </ListItem>
         <ListItem>
           <Link href="https://github.com/nerikeshi-k" newtab>
-            GitHub
+            github
           </Link>
         </ListItem>
         <ListItem>
           <Link href="https://soundcloud.com/nerikeshik" newtab>
-            SoundCloud
+            soundcloud
           </Link>
         </ListItem>
         <ListItem>
           <Link href="https://www.nicovideo.jp/user/1860167" newtab>
-            ニコニコ動画
+            niconico
           </Link>
         </ListItem>
       </List>
     </Section>
     <Section>
-      <SectionHeading>開発物</SectionHeading>
+      <SectionHeading>dev</SectionHeading>
       <List>
         <ListItem>
           <Link href="https://odaibako.net" newtab>
@@ -91,7 +91,7 @@ export default () => (
       </List>
     </Section>
     <Section>
-      <SectionHeading>連絡先</SectionHeading>
+      <SectionHeading>contact</SectionHeading>
       <List>
         <ListItem colspan={2}>nerikeshik@gmail.com</ListItem>
       </List>
