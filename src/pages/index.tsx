@@ -5,13 +5,14 @@ import Section from 'components/Section';
 import SectionHeading from 'components/SectionHeading';
 import React from 'react';
 import styled from 'styled-components';
+import { ICON_URL } from '../constants';
 
 export default () => (
   <Wrapper>
     <Heading>neriko.net</Heading>
     <Section>
       <MyIconWrapper>
-        <MyIcon src="/icon.202112.jpg" alt="著者近影" />
+        <MyIcon src={ICON_URL} alt="著者近影" />
       </MyIconWrapper>
       <Description>
         <Paragraph>ねりけしです。</Paragraph>

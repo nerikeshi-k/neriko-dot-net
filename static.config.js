@@ -1,6 +1,6 @@
-import axios from 'axios';
 import path from 'path';
 import React from 'react';
+import { ICON_URL } from './src/constants';
 
 export default {
   entry: path.join(__dirname, 'src', 'index.tsx'),
@@ -21,10 +21,7 @@ export default {
           property="og:description"
           content="制作物一覧、自己紹介、連絡先などです"
         />
-        <meta
-          property="og:image"
-          content="https://neriko.net/icon.202110.png"
-        />
+        <meta property="og:image" content={ICON_URL} />
       </Head>
       <Body>{children}</Body>
     </Html>
