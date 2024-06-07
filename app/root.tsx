@@ -1,5 +1,11 @@
-import { LinksFunction } from '@remix-run/node';
-import { Links, Meta, Outlet, Scripts } from '@remix-run/react';
+import {
+  Links,
+  Meta,
+  Outlet,
+  Scripts,
+  ScrollRestoration,
+} from '@remix-run/react';
+import type { LinksFunction } from '@remix-run/react/dist/routeModules';
 import icon from '~/assets/icon.jpg';
 import styles from './tailwind.css?url';
 
@@ -13,7 +19,6 @@ export default function App() {
         <title>neriko.net</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
         <meta name="twitter:card" content="summary" />
         <meta property="og:url" content="https://neriko.net/" />
         <meta property="og:title" content="ねりけしについて" />
@@ -27,6 +32,7 @@ export default function App() {
       </head>
       <body>
         <Outlet />
+        <ScrollRestoration />
         <Scripts />
       </body>
     </html>
