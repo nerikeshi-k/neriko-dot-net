@@ -1,10 +1,17 @@
 {
   "name": "nerikonet",
   "private": true,
-  "scripts": {
-  },
+  "scripts": {},
   "dependencies": {
+    "@remix-run/node": "^2.9.2",
+    "@remix-run/react": "^2.9.2",
+    "@remix-run/serve": "^2.9.2",
+    "isbot": "4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@remix-run/dev": "^2.9.2",
+    "vite": "^5.2.13"
   }
 }
