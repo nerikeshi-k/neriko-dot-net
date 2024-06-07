@@ -3,7 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "remix vite:dev"
+    "dev": "remix vite:dev",
+    "build": "remix build",
+    "start": "remix-serve build/index.js"
   },
   "dependencies": {
     "@remix-run/node": "^2.9.2",
