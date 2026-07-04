@@ -1,4 +1,5 @@
 node_modules
+app/routeTree.gen.ts
 .DS_Store
 /dist
 /tmp
@@ -6,3 +7,5 @@ node_modules
 /build
 /public
 /.cache
+/.pnpm-store/
+

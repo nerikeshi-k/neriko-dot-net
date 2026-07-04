@@ -3,22 +3,17 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "remix vite:dev",
-    "build": "remix vite:build",
-    "deploy": "pnpm run build && wrangler pages deploy",
-    "start": "remix-serve build/index.js"
+    "dev": "vite",
+    "build": "vite build",
+    "deploy": "pnpm run build && wrangler pages deploy"
   },
   "dependencies": {
-    "@remix-run/cloudflare": "^2.9.2",
-    "@remix-run/cloudflare-pages": "^2.9.2",
-    "@remix-run/react": "^2.9.2",
-    "@remix-run/serve": "^2.9.2",
-    "isbot": "4",
+    "@tanstack/react-router": "^1.120.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.9.2",
+    "@tanstack/router-plugin": "^1.120.3",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.19",

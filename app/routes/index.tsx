@@ -1,7 +1,12 @@
+import { createFileRoute } from '@tanstack/react-router';
 import icon from '~/assets/icon.jpg';
 import xlogo from '~/assets/x.png';
 
-export default function Home() {
+export const Route = createFileRoute('/')({
+  component: Home,
+});
+
+function Home() {
   return (
     <main className="my-8 space-y-12 w-full max-w-screen-sm mx-auto px-2">
       <section className="flex flex-col space-y-4 items-center">
